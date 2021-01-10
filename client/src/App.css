@@ -1,0 +1,83 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 7.5%;
+    background-color: #2f9c37;
+    color: #fff;
+}
+.nav__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+}
+.nav__logo-link:hover{
+    color: #000;
+}
+.nav__logo a img{
+    width: 50px;
+    height: 70px;
+    margin-right: 20px;
+    height: auto;
+}
+.nav__items{
+    display: flex;
+    list-style-type: none;
+}
+.nav__item-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+.nav__item-link:hover{
+    color: #000;
+}
+.nav__toggle{
+    width: 56px;
+    height: 40px;
+    color: #000;
+    background-color: transparent;
+    font-size: 30px;
+    border: 1px solid #000;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table th {
+    padding: 12px 0;
+    text-align: left;
+}
+input, button{
+    display: block;
+    width: 100%;
+    padding: 8px 14px;
+}
